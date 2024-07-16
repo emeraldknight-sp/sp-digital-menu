@@ -1,15 +1,323 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/output.css">
-  <title>Digital Menu</title>
-</head>
-<body class="bg-gray-100 text-zinc-900 antialiased">
-  <script src="js/scripts.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/output.css" />
+    <title>Digital Menu</title>
+  </head>
+  <body class="bg-zinc-100 text-zinc-900 font-content antialiased">
+    <header
+      class="bg-home bg-cover w-full flex flex-col justify-center items-center py-6"
+    >
+      <img class="rounded-full mb-8" src="./img/logo.png" alt="" />
+      <h1 class="text-3xl text-white font-bold font-title leading-normal mb-1">
+        Digital Menu
+      </h1>
+      <p class="text-md text-white mb-4">Av. Paulista, 312 - Centro</p>
+      <div class="bg-green-500 px-4 py-2 rounded">
+        <span class="text-lg text-white font-bold"
+          >Seg á Dom - 18:00 as 22:00</span
+        >
+      </div>
+    </header>
+    <main class="flex flex-col gap-11 py-11 px-4 mb-14">
+      <section class="max-w-5xl w-full mx-auto">
+        <h2 class="text-2xl font-bold mb-4 md:text-3xl md:text-center">
+          Conheça nosso menu
+        </h2>
+        <article class="grid grid-cols-1 gap-11 md:grid-cols-2">
+          <div class="flex gap-2 flex-1 group">
+            <img
+              class="size-28 rounded duration-300 group-hover:rotate-6"
+              src="./img/hamb-1.png"
+              alt="Cheese Burger Duplo"
+            />
+            <div class="flex flex-col justify-between flex-1">
+              <div>
+                <h2 class="font-bold">Cheese Burger Duplo</h2>
+                <p class="text-xs">
+                  Pão levinho de fermentação natural da Trigou, burger 160g,
+                  queijo prato e maionese da casa.
+                </p>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-xl font-bold">R$ 35,00</span>
+                <button
+                  type="button"
+                  class="bg-zinc-900 text-white w-11 py-0.5 rounded duration-300 hover:bg-zinc-800"
+                  aria-label="adicionar ao carrinho"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-2 flex-1 group">
+            <img
+              class="size-28 rounded duration-300 group-hover:rotate-6"
+              src="./img/hamb-2.png"
+              alt="Cheese Burger"
+            />
+            <div class="flex flex-col justify-between flex-1">
+              <div>
+                <h2 class="font-bold">Cheese Burger</h2>
+                <p class="text-xs">
+                  Pão levinho de fermentação natural da Trigou, burger 160g,
+                  queijo prato e maionese da casa.
+                </p>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-xl font-bold">R$ 15,00</span>
+                <button
+                  type="button"
+                  class="bg-zinc-900 text-white w-11 py-0.5 rounded duration-300 hover:bg-zinc-800"
+                  aria-label="adicionar ao carrinho"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-2 flex-1 group">
+            <img
+              class="size-28 rounded duration-300 group-hover:rotate-6"
+              src="./img/hamb-3.png"
+              alt="Smash Burger"
+            />
+            <div class="flex flex-col justify-between flex-1">
+              <div>
+                <h2 class="font-bold">Smash Burger</h2>
+                <p class="text-xs">
+                  Pão levinho de fermentação natural da Trigou, burger 160g,
+                  queijo prato e maionese da casa.
+                </p>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-xl font-bold">R$ 18,00</span>
+                <button
+                  type="button"
+                  class="bg-zinc-900 text-white w-11 py-0.5 rounded duration-300 hover:bg-zinc-800"
+                  aria-label="adicionar ao carrinho"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-2 flex-1 group">
+            <img
+              class="size-28 rounded duration-300 group-hover:rotate-6"
+              src="./img/hamb-4.png"
+              alt="Cheese Bacon"
+            />
+            <div class="flex flex-col justify-between flex-1">
+              <div>
+                <h2 class="font-bold">Cheese Bacon</h2>
+                <p class="text-xs">
+                  Pão levinho de fermentação natural da Trigou, burger 160g,
+                  queijo prato e maionese da casa.
+                </p>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-xl font-bold">R$ 17,00</span>
+                <button
+                  type="button"
+                  class="bg-zinc-900 text-white w-11 py-0.5 rounded duration-300 hover:bg-zinc-800"
+                  aria-label="adicionar ao carrinho"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-2 flex-1 group">
+            <img
+              class="size-28 rounded duration-300 group-hover:rotate-6"
+              src="./img/hamb-5.png"
+              alt="Veggie Delight"
+            />
+            <div class="flex flex-col justify-between flex-1">
+              <div>
+                <h2 class="font-bold">Veggie Delight</h2>
+                <p class="text-xs">
+                  Pão levinho de fermentação natural da Trigou, burger 160g,
+                  queijo prato e maionese da casa.
+                </p>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-xl font-bold">R$ 14,00</span>
+                <button
+                  type="button"
+                  class="bg-zinc-900 text-white w-11 py-0.5 rounded duration-300 hover:bg-zinc-800"
+                  aria-label="adicionar ao carrinho"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-2 flex-1 group">
+            <img
+              class="size-28 rounded duration-300 group-hover:rotate-6"
+              src="./img/hamb-6.png"
+              alt="X-Bacon"
+            />
+            <div class="flex flex-col justify-between flex-1">
+              <div>
+                <h2 class="font-bold">X-Bacon</h2>
+                <p class="text-xs">
+                  Pão levinho de fermentação natural da Trigou, burger 160g,
+                  queijo prato e maionese da casa.
+                </p>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-xl font-bold">R$ 12,50</span>
+                <button
+                  type="button"
+                  class="bg-zinc-900 text-white w-11 py-0.5 rounded duration-300 hover:bg-zinc-800"
+                  aria-label="adicionar ao carrinho"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-2 flex-1 group">
+            <img
+              class="size-28 rounded duration-300 group-hover:rotate-6"
+              src="./img/hamb-7.png"
+              alt="Explosion Burger"
+            />
+            <div class="flex flex-col justify-between flex-1">
+              <div>
+                <h2 class="font-bold">Explosion Burger</h2>
+                <p class="text-xs">
+                  Pão levinho de fermentação natural da Trigou, burger 160g,
+                  queijo prato e maionese da casa.
+                </p>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-xl font-bold">R$ 30,00</span>
+                <button
+                  type="button"
+                  class="bg-zinc-900 text-white w-11 py-0.5 rounded duration-300 hover:bg-zinc-800"
+                  aria-label="adicionar ao carrinho"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-2 flex-1 group">
+            <img
+              class="size-28 rounded duration-300 group-hover:rotate-6"
+              src="./img/hamb-8.png"
+              alt="X-Salad"
+            />
+            <div class="flex flex-col justify-between flex-1">
+              <div>
+                <h2 class="font-bold">X-Salad</h2>
+                <p class="text-xs">
+                  Pão levinho de fermentação natural da Trigou, burger 160g,
+                  queijo prato e maionese da casa.
+                </p>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-xl font-bold">R$ 28,00</span>
+                <button
+                  type="button"
+                  class="bg-zinc-900 text-white w-11 py-0.5 rounded duration-300 hover:bg-zinc-800"
+                  aria-label="adicionar ao carrinho"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="max-w-5xl w-full mx-auto">
+        <h2 class="text-2xl font-bold my-4 md:text-3xl">Bebidas</h2>
+        <article class="grid grid-cols-1 gap-11 md:grid-cols-2">
+          <div class="flex gap-2 flex-1 group">
+            <img
+              class="size-28 rounded duration-300 group-hover:rotate-6"
+              src="./img/refri-1.png"
+              alt="Coca-cola (lata)"
+            />
+            <div class="flex flex-col justify-between flex-1">
+              <div>
+                <h2 class="font-bold">Coca-cola (lata)</h2>
+                <p>Contém 250 ml</p>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-xl font-bold">R$ 6,00</span>
+                <button
+                  type="button"
+                  class="bg-zinc-900 text-white w-11 py-0.5 rounded duration-300 hover:bg-zinc-800"
+                  aria-label="adicionar ao carrinho"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-2 flex-1 group">
+            <img
+              class="size-28 rounded duration-300 group-hover:rotate-6"
+              src="./img/refri-2.png"
+              alt="Guaraná (lata)"
+            />
+            <div class="flex flex-col justify-between flex-1">
+              <div>
+                <h2 class="font-bold">Guaraná (lata)</h2>
+                <p>Contém 375 ml</p>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-xl font-bold">R$ 5,00</span>
+                <button
+                  type="button"
+                  class="bg-zinc-900 text-white w-11 py-0.5 rounded duration-300 hover:bg-zinc-800"
+                  aria-label="adicionar ao carrinho"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="fixed bottom-0 left-0 bg-red-500 w-full px-8 py-4 duration-300 hover:bg-red-600">
+      <button
+        type="button"
+        class="w-full text-white"
+        aria-label="ver carrinho de compras"
+      >
+        <span
+          class="text-sm font-bold before:content-['('] before:mr-0.5 after:content-[')'] after:ml-0.5"
+          >0</span
+        >
+        <span class="text-sm font-bold">Veja seu carrinho</span>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+    </footer>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
