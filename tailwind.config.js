@@ -2,7 +2,7 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    fontFamily: { sans: "Poppins", title: "Inter", content: "Roboto" },
+    fontFamily: { title: "Inter", content: "Roboto" },
     extend: {
       colors: {
         green: {
