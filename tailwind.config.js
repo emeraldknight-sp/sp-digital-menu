@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
     fontFamily: { title: "Inter", content: "Roboto" },
     extend: {
@@ -13,7 +13,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        home: "url('/src/img/bg.png')",
+        home: "url('/assets/img/bg.png')",
       },
     },
   },
