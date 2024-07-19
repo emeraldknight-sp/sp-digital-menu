@@ -241,7 +241,7 @@ const verifyStoreStatus = () => {
   const date = new Date();
   const hour = date.getHours();
 
-  return true;
+  return hour >= 18 && hour < 22;
 };
 
 const isTheRestaurantOpen = verifyStoreStatus();
